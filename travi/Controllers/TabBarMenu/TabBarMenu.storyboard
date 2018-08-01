@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0LP-jd-nOw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="n0f-kF-fj7">
+            <objects>
+                <tabBarController id="0LP-jd-nOw" customClass="MainTabBarController" customModule="travi" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z77-qK-snn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.96470588239999999" green="0.30588235289999999" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dsA-TB-Eyr" kind="relationship" relationship="viewControllers" id="E5j-UU-CxB"/>
+                        <segue destination="jA5-Vc-Iu1" kind="relationship" relationship="viewControllers" id="x3s-tC-btI"/>
+                        <segue destination="PKA-m0-6ud" kind="relationship" relationship="viewControllers" id="REJ-o0-lME"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLx-ts-j9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="-73"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="f9P-ry-XVi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="dsA-TB-Eyr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Item1" selectedImage="Item1selected" id="kC0-iG-LDl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vW7-6k-cDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="587" y="-396"/>
+        </scene>
+        <!--NewTravel-->
+        <scene sceneID="pS6-6K-GZs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewTravel" id="jA5-Vc-Iu1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="item2" selectedImage="Item2" id="8ge-BJ-c84"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Vg-ln-gdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="-323"/>
+        </scene>
+        <!--Posting-->
+        <scene sceneID="TTd-oo-qJJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Posting" id="PKA-m0-6ud" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="2QU-Of-ydm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uoz-8q-t7N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1135" y="49"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Item1" width="22" height="22"/>
+        <image name="Item1selected" width="21" height="21"/>
+        <image name="Item2" width="16" height="16"/>
+        <image name="item2" width="16" height="24"/>
+    </resources>
+</document>
